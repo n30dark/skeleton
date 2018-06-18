@@ -1,8 +1,8 @@
 <?php
 
-namespace League\Skeleton;
+namespace tfc\tfclog;
 
-class ExampleTest extends \PHPUnit\Framework\TestCase
+class TFCLogTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Test that true does in fact equal true
