@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "tfc/tfclog",
     "type": "library",
-    "description": ":package_description",
+    "description": "TFC Logging System",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "tfc",
+        "tfclog"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/tfc/tfclog",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Sergio Paulino",
+            "email": "sergio.paulino@thefirstclub.com",
+            "homepage": "https://github.com/n30dark",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "tfc\\tfclog\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "tfc\\tfclog\\": "tests"
         }
     },
     "scripts": {
