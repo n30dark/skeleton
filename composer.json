@@ -4,7 +4,8 @@
     "description": "TFC Logging System",
     "keywords": [
         "tfc",
-        "tfclog"
+        "tfclog",
+        "tfclogger"
     ],
     "homepage": "https://github.com/tfc/tfclog",
     "license": "MIT",
@@ -13,7 +14,7 @@
             "name": "Sergio Paulino",
             "email": "sergio.paulino@thefirstclub.com",
             "homepage": "https://github.com/n30dark",
-            "role": "Developer"
+            "role": "Head of Development"
         }
     ],
     "require": {
