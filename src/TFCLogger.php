@@ -1,6 +1,6 @@
 <?php
 
-namespace tfc\tfclog;
+namespace tfc\TFCLogger;
 
 class TFCLogger
 {
