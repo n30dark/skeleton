@@ -33,8 +33,11 @@ $ composer require tfc/tfclog
 ## Usage
 
 ``` php
-$skeleton = new tfc\tfclog();
-echo $skeleton->echoPhrase('Hello, League!');
+$logger = new tfc\tfclog\PDOLogger();
+echo $logger->logSuccess('Success logged!', 'user');
+
+$logger = new tfc\tfclog\DynamoLogger();
+echo $logger->logSuccess('Success logged!', 'user');
 ```
 
 ## Change log
