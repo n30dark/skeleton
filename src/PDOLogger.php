@@ -1,18 +1,18 @@
 <?php
 
-namespace tfc\TFCLogger;
+namespace tfc\PDOLogger;
 
-class TFCLogger
+class PDOLogger
 {
 
-    private $logpdo;
+    private $conn;
 
     /**
      * Create a new Skeleton Instance
      */
-    public function __construct(PDO $logpdo)
+    public function __construct(PDO $conn)
     {
-        $this->logpdo = $logpdo;
+        $this->conn = $conn;
     }
 
     /**
@@ -26,7 +26,7 @@ class TFCLogger
         try {
 
             $sql = "CALL LogSuccess(:message, :user)";
-            $stmt = $this->logpso->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(":message", $message, PDO::PARAM_STR);
             $stmt->bindValue(":user", $apiUser, PDO::PARAM_STR);
             $stmt->execute();
@@ -50,7 +50,7 @@ class TFCLogger
         try {
 
             $sql = "CALL LogAlert(:err, :message, :user)";
-            $stmt = $this->logpso->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(":err", $err, PDO::PARAM_STR);
             $stmt->bindValue(":message", $message, PDO::PARAM_STR);
             $stmt->bindValue(":user", $apiUser, PDO::PARAM_STR);
@@ -74,7 +74,7 @@ class TFCLogger
         try {
 
             $sql = "CALL LogError(:err, :message, :user)";
-            $stmt = $this->logpso->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(":err", $err, PDO::PARAM_STR);
             $stmt->bindValue(":message", $message, PDO::PARAM_STR);
             $stmt->bindValue(":user", $apiUser, PDO::PARAM_STR);
@@ -96,7 +96,7 @@ class TFCLogger
         try {
 
             $sql = "CALL getLogs(:filter)";
-            $stmt = $this->logpso->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(":filter", $filter, PDO::PARAM_STR);
             $stmt->execute();
 
@@ -116,7 +116,7 @@ class TFCLogger
         try {
 
             $sql = "CALL getLog(:filter)";
-            $stmt = $this->logpso->prepare($sql);
+            $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(":filter", $filter, PDO::PARAM_STR);
             $stmt->execute();
 
