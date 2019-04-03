@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "tfc\\tfclog\\": "src"
+            "TFCLog\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "tfc\\tfclog\\": "tests"
+            "TFCLog\\": "tests"
         }
     }
 }

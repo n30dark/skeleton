@@ -1,6 +1,6 @@
 <?php
 
-namespace tfc\DynamoLogger;
+namespace TFCLog;
 
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\DynamoDb\Marshaler;

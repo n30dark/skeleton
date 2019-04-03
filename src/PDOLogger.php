@@ -1,6 +1,6 @@
 <?php
 
-namespace tfc\PDOLogger;
+namespace TFCLog;
 
 class PDOLogger
 {
