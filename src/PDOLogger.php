@@ -2,7 +2,7 @@
 
 namespace TFCLog;
 
-class PDOLogger
+class PDOLogger implements TFCLogger
 {
 
     private $conn;

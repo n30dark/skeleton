@@ -5,7 +5,7 @@ namespace TFCLog;
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\DynamoDb\Marshaler;
 
-class DynamoLogger
+class DynamoLogger implements TFCLogger
 {
 
     private $conn;
