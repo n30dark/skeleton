@@ -5,6 +5,8 @@ namespace TFCLog;
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\DynamoDb\Marshaler;
 
+use Aws\DynamoDb\Exception\DynamoDbException;
+
 class DynamoLogger implements TFCLogger
 {
 
@@ -47,7 +49,7 @@ class DynamoLogger implements TFCLogger
             
             $this->conn->putItem($params);
             return true;
-        } catch (Exception $e) {
+        } catch (DynamoDbException $e) {
             throw $e;
         }
 
@@ -79,7 +81,7 @@ class DynamoLogger implements TFCLogger
             
             $this->conn->putItem($params);
             return true;
-        } catch (Exception $e) {
+        } catch (DynamoDbException $e) {
             throw $e;
         }
     }
@@ -110,7 +112,7 @@ class DynamoLogger implements TFCLogger
             
             $this->conn->putItem($params);
             return true;
-        } catch (Exception $e) {
+        } catch (DynamoDbException $e) {
             throw $e;
         }
     }
@@ -141,7 +143,7 @@ class DynamoLogger implements TFCLogger
             
             $this->conn->putItem($params);
             return true;
-        } catch (Exception $e) {
+        } catch (DynamoDbException $e) {
             throw $e;
         }
     }
