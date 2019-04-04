@@ -1,0 +1,34 @@
+TFCLog\DynamoLogger
+ [x] Get name
+ [x] Log success
+ [x] Log info
+ [x] Log notice
+ [x] Log warning
+ [x] Log alert
+ [x] Log error
+ [x] Log critical
+ [x] Log emergency
+
+TFCLog\PDOLogger
+ [x] Get name
+ [ ] Database exists
+ [ ] Log success
+ [ ] Log info
+ [ ] Log notice
+ [ ] Log warning
+ [ ] Log alert
+ [ ] Log error
+ [ ] Log critical
+ [ ] Log emergency
+
+TFCLog\TFCLogger
+ [x] Get name
+ [x] Log success
+ [x] Log info
+ [x] Log notice
+ [x] Log warning
+ [x] Log alert
+ [x] Log error
+ [x] Log critical
+ [x] Log emergency
+
