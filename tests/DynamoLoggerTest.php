@@ -2,7 +2,8 @@
 
 namespace TFCLog;
 
-use Aws\AwsClient;
+
+use Aws\DynamoDb\DynamoDbClient;
 
 
 class DynamoLoggerTest extends \PHPUnit\Framework\TestCase
@@ -11,13 +12,21 @@ class DynamoLoggerTest extends \PHPUnit\Framework\TestCase
     protected $logger;
     protected $dynamo;
 
+    private $config = [
+        'region' => 'us-east-1',
+        'version' => 'latest',
+        'credentials' => [
+            'key' => 'AKIAJ55TJ22YQ3RRUYIQ',
+            'secret' => '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'
+        ],
+        'http'    => [
+            'verify' => false
+        ]
+    ];
+
     public function setUp()
     {
-        $sdk = new Aws\Sdk([
-            
-        ]);
-
-        $this->dynamo = 
+        $this->dynamo = new DynamoDBClient($this->config);
         $this->logger = new DynamoLogger('foo', $this->dynamo);
     }
 

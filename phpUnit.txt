@@ -1,13 +1,12 @@
 TFCLog\DynamoLogger
- [x] Get name
- [x] Log success
- [x] Log info
- [x] Log notice
- [x] Log warning
- [x] Log alert
- [x] Log error
- [x] Log critical
- [x] Log emergency
+ [ ] Log success
+ [ ] Log info
+ [ ] Log notice
+ [ ] Log warning
+ [ ] Log alert
+ [ ] Log error
+ [ ] Log critical
+ [ ] Log emergency
 
 TFCLog\PDOLogger
  [x] Log success

@@ -4,13 +4,14 @@ namespace TFCLog;
 
 use Monolog\Logger;
 use Monolog\Handler\DynamoDbHandler;
+use Aws\DynamoDb\DynamoDbClient;
 
 class DynamoLogger extends TFCLogger
 {
 
     private $conn;
 
-    const TABLENAME = 'logs';
+    const TABLENAME = 'tfclogs';
 
     /**
      * Create a new Skeleton Instance
