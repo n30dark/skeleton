@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<dataset>
+	<table_data name="tfclogger">
+	<row>
+		<field name="id">1</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737358</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">&quot;test&quot;</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:29:18+00:00</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737423</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">&quot;{test}&quot;</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:30:23+00:00</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737532</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">{&quot;message&quot;: &quot;test&quot;}</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:32:12+00:00</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737589</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">{&quot;message&quot;: &quot;testing log success&quot;}</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:33:09+00:00</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737653</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">{&quot;message&quot;: &quot;testing log success&quot;}</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:34:13+00:00</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737702</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">{&quot;message&quot;: &quot;testing log success&quot;}</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:35:02+00:00</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="channel">foo</field>
+		<field name="level">200</field>
+		<field name="message">SUCCESS</field>
+		<field name="time">1554737825</field>
+		<field name="log_type">SUCCESS</field>
+		<field name="log_err">E000</field>
+		<field name="log_content">{&quot;message&quot;: &quot;testing log success&quot;}</field>
+		<field name="log_user">phpunit</field>
+		<field name="log_time">2019-04-08T15:37:05+00:00</field>
+	</row>
+	</table_data>
+</dataset>

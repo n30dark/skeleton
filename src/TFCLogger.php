@@ -43,7 +43,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'SUCCESS',
                     'log_err'       => 'E000',
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -70,7 +70,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'INFO',
                     'log_err'       => 'E000',
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -97,7 +97,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'NOTICE',
                     'log_err'       => 'E000',
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -125,7 +125,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'WARNING',
                     'log_err'       => $err,
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -153,7 +153,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'ALERT',
                     'log_err'       => $err,
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -181,7 +181,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'ERROR',
                     'log_err'       => $err,
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -209,7 +209,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'CRITICAL',
                     'log_err'       => $err,
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
@@ -237,7 +237,7 @@ class TFCLogger implements TFCLoggerInterface
                 [
                     'log_type'      => 'EMERGENCY',
                     'log_err'       => $err,
-                    'log_content'   => json_decode($content),
+                    'log_content'   => $content,
                     'log_user'      => $apiUser,
                     'log_time'      => date(DATE_ATOM)
                 ]
