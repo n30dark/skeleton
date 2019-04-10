@@ -23,7 +23,6 @@
         "wazaari/monolog-mysql": ">1.0.0",
         "faapz/pdo": "^v1.11",
         "monolog/monolog": "^1.24",
-        "vlucas/phpdotenv": "^3.3",
         "reallywang/dynamo-db": "^1.5"
     },
     "require-dev": {
