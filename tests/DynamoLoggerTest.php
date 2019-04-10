@@ -16,8 +16,8 @@ class DynamoLoggerTest extends \PHPUnit\Framework\TestCase
         'region' => 'us-east-1',
         'version' => 'latest',
         'credentials' => [
-            'key' => 'AKIAJ55TJ22YQ3RRUYIQ',
-            'secret' => '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'
+            'key' => 'xxxxxxxxxxxxx',
+            'secret' => 'xxxxxxxxxxxxx'
         ],
         'http'    => [
             'verify' => false
