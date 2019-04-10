@@ -39,7 +39,7 @@ class TFCLogger implements TFCLoggerInterface
     {
         try {
             $this->logger->info(
-                'LOG', 
+                'SUCCESS', 
                 [
                     'log_type'      => 'SUCCESS',
                     'log_err'       => 'E000',
@@ -81,7 +81,7 @@ class TFCLogger implements TFCLoggerInterface
         return false;
     }
 
-    public function success(string $content, string $apiUser = 'auto') : bool
+    public function success(string $content, string $apiUser = 'auto') : void
     {
         $this->logSuccess($content, $apiUser);
     }
@@ -113,7 +113,7 @@ class TFCLogger implements TFCLoggerInterface
         return false;
     }
 
-    public function info(string $content, string $apiUser = 'auto') : bool
+    public function info(string $content, string $apiUser = 'auto') : void
     {
         $this->logInfo($content, $apiUser);
     }
@@ -145,7 +145,7 @@ class TFCLogger implements TFCLoggerInterface
         return false;
     }
 
-    public function notice(string $content, string $apiUser = 'auto') : bool
+    public function notice(string $content, string $apiUser = 'auto') : void
     {
         $this->logNotice($content, $apiUser);
     }
@@ -178,7 +178,8 @@ class TFCLogger implements TFCLoggerInterface
 
     }
 
-    public function warning(string $err, string $content, string $apiUser = 'auto') : bool{
+    public function warning(string $err, string $content, string $apiUser = 'auto') : void
+    {
         $this->logWarning($err, $content, $apiUser);
     }
 
@@ -210,7 +211,8 @@ class TFCLogger implements TFCLoggerInterface
 
     }
     
-    public function alert(string $err, string $content, string $apiUser = 'auto') : bool{
+    public function alert(string $err, string $content, string $apiUser = 'auto') : void
+    {
         $this->logAlert($err, $content, $apiUser);
     }
 
@@ -242,7 +244,8 @@ class TFCLogger implements TFCLoggerInterface
 
     }
 
-    public function error(string $err, string $content, string $apiUser = 'auto') : bool{
+    public function error(string $err, string $content, string $apiUser = 'auto') : void
+    {
         $this->logError($err, $content, $apiUser);
     }
 
@@ -274,7 +277,8 @@ class TFCLogger implements TFCLoggerInterface
 
     }
 
-    public function critical(string $err, string $content, string $apiUser = 'auto') : bool{
+    public function critical(string $err, string $content, string $apiUser = 'auto') : void
+    {
         $this->logCritical($err, $content, $apiUser);
     }
 
@@ -306,7 +310,8 @@ class TFCLogger implements TFCLoggerInterface
 
     }
 
-    public function emergency(string $err, string $content, string $apiUser = 'auto') : bool{
+    public function emergency(string $err, string $content, string $apiUser = 'auto') : void
+    {
         $this->logEmergency($err, $content, $apiUser);
     }
 
