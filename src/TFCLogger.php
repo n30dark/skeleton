@@ -39,7 +39,7 @@ class TFCLogger implements TFCLoggerInterface
     {
         try {
             $this->logger->info(
-                'SUCCESS', 
+                'LOG', 
                 [
                     'log_type'      => 'SUCCESS',
                     'log_err'       => 'E000',
