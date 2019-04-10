@@ -1,4 +1,5 @@
-TFCLog\DynamoLogge [ [ ] Log success
+TFCLog\DynamoLogger
+ [ ] Log success
  [ ] Log info
  [ ] Log notice
  [ ] Log warning
